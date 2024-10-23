@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.usta.controllers.CambiarContrasenaController">
+    <TextField fx:id="nuevaContrasenaTxt" promptText="Nueva Contraseña" layoutX="50" layoutY="50"/>
+    <TextField fx:id="confirmarContrasenaTxt" promptText="Confirmar Contraseña" layoutX="50" layoutY="100"/>
+    <Button text="Cambiar" onAction="#cambiarContrasena" layoutX="50" layoutY="150"/>
+</AnchorPane>
+

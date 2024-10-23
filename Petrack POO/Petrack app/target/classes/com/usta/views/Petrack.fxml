@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.usta.controllers.PetrackController">
+   <top>
+      <HBox alignment="CENTER" prefHeight="67.0" prefWidth="638.0" style="-fx-background-color: #77617A;" BorderPane.alignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ingresa a Petrack" textAlignment="CENTER" wrappingWidth="225.422607421875">
+               <font>
+                  <Font name="Times New Roman" size="25.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <HBox alignment="TOP_CENTER" prefHeight="333.0" prefWidth="606.0" style="-fx-background-color: #807182;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="333.0" prefWidth="188.0" style="-fx-background-color: #807182;">
+               <children>
+                  <VBox id="datosDueño" alignment="BASELINE_CENTER" focusTraversable="true" prefHeight="335.0" prefWidth="179.0" style="-fx-background-color: #807182;">
+                     <children>
+                        <Label alignment="TOP_LEFT" contentDisplay="TOP" text="Login">
+                           <font>
+                              <Font name="Times New Roman" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="Usuariotxt" prefHeight="26.0" prefWidth="239.0" promptText="Usuario" style="-fx-background-color: #FFFFFF;">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="Contraseñatxt" prefHeight="52.0" prefWidth="240.0" promptText="Contraseña" style="-fx-background-color: #FFFFFF;">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </TextField>
+                        <Button id="Menubtn" mnemonicParsing="false" onAction="#switchToMenu" prefHeight="53.0" prefWidth="91.0" style="-fx-background-color: #77617A;" text="Log In">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="cambiarContrasenaBtn" mnemonicParsing="false" onAction="#switchToCambiarContrasena" text="¿Olvido su contraseña?" />
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+   </center>
+   <right>
+      <Pane prefHeight="333.0" prefWidth="430.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="148.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No ¿tienes una cuenta?" wrappingWidth="134.49298095703125" />
+            <Button fx:id="Registrobtn" layoutX="169.0" layoutY="55.0" mnemonicParsing="false" onAction="#switchToRegistro" style="-fx-background-color: #77617A;" text="Registrate aqui!">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </right>
+</BorderPane>
